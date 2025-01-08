@@ -1,0 +1,19 @@
+[project]
+name = "hexlet-code"
+version = "0.1.0"
+description = "Compares two configuration files and shows a difference"
+authors = [
+    {name = "Adel Napier",email = "adelnapier@ya.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+gendiff = "gendiff.scripts.gendiff:main"
