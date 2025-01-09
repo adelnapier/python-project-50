@@ -14,10 +14,12 @@ dependencies = []
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+
 [tool.poetry]
 packages = [
-    {include = "gendiff"}
+    { include = "gendiff" }
 ]
+
 
 [tool.poetry.scripts]
 gendiff = "gendiff.scripts.gendiff:main"

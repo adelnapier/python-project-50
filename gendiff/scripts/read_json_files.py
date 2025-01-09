@@ -1,3 +1,5 @@
+print("Скрипт read-json успешно запущен!")
+
 import json
 
 def read_and_parse(file_path):
