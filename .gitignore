@@ -22,3 +22,5 @@ __pycache__/
 *.sqlite3
 *.db
 .DS_Store
+python
+poetry.lock
