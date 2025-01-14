@@ -29,6 +29,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install ruff pytest pytest-cov
 
+      - name: Install package
+        run: pip install .
+
+
       # 4. Запуск линтера
       - name: Run lint
         run: make lint
