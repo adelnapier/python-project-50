@@ -32,11 +32,28 @@ jobs:
       - name: Install package
         run: pip install .
 
+      # 4. Установка CodeClimate Test Reporter
+      - name: Install CodeClimate Test Reporter
+        run: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+      - name: Set permissions for test reporter
+        run: chmod +x ./cc-test-reporter
 
-      # 4. Запуск линтера
+      # 5. Подготовка тестового репортера
+      - name: Before build
+        run: ./cc-test-reporter before-build
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+
+      # 6. Запуск линтера
       - name: Run lint
         run: make lint
 
-      # 5. Запуск тестов
+      # 7. Запуск тестов с покрытием кода
       - name: Run tests
-        run: make test
+        run: pytest --cov=gendiff --cov-report=xml tests/
+
+      # 8. Отправка покрытия кода
+      - name: After build
+        run: ./cc-test-reporter after-build --exit-code $?
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
