@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Установка Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      # 3. Установка зависимостей
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff pytest pytest-cov
+
+      # 4. Запуск линтера
+      - name: Run lint
+        run: make lint
+
+      # 5. Запуск тестов
+      - name: Run tests
+        run: make test
