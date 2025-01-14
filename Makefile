@@ -4,4 +4,4 @@ lint:
 .PHONY: test
 
 test:
-	pytest --cov=gendiff tests/
+	pytest --cov=gendiff --cov-report=xml tests/

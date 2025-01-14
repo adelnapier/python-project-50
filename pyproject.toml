@@ -26,7 +26,6 @@ dev-dependencies = [
 [project.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
 read-json = "gendiff.scripts.read_json_files:main"
-lint = "ruff check ."
 
 
 [tool.ruff]
