@@ -6,3 +6,5 @@
 
 ### Пример работы
 Сравнение двух JSON-файлов: https://asciinema.org/connect/1fb24881-045c-48b5-94b4-9235d24f569f 
+Сравнение двух YAML-файлов:
+[![asciinema](https://asciinema.org/a/xaWQYwqOETN0uJom6fVEMkROC.svg)](https://asciinema.org/a/xaWQYwqOETN0uJom6fVEMkROC)
