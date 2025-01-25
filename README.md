@@ -10,3 +10,5 @@
 [![asciinema](https://asciinema.org/a/xaWQYwqOETN0uJom6fVEMkROC.svg)](https://asciinema.org/a/xaWQYwqOETN0uJom6fVEMkROC)
 ### Пример с рекурсивным сравнением:
 [![asciinema](https://asciinema.org/a/IuFabT82cEdGpV8kEAYxWdxpC.svg)](https://asciinema.org/a/IuFabT82cEdGpV8kEAYxWdxpC)
+### Пример работы для формата 'plain':
+[![asciinema](https://asciinema.org/a/c9Q9O5DTloOftGNWQs9ZzbrxN.png)](https://asciinema.org/a/c9Q9O5DTloOftGNWQs9ZzbrxN)
