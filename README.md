@@ -12,3 +12,5 @@
 [![asciinema](https://asciinema.org/a/IuFabT82cEdGpV8kEAYxWdxpC.svg)](https://asciinema.org/a/IuFabT82cEdGpV8kEAYxWdxpC)
 ### Пример работы для формата 'plain':
 [![asciinema](https://asciinema.org/a/c9Q9O5DTloOftGNWQs9ZzbrxN.png)](https://asciinema.org/a/c9Q9O5DTloOftGNWQs9ZzbrxN)
+### JSON Formatter Пример:
+[![asciinema](https://asciinema.org/a/U48TOSRslOoYBKVrqGVfaEQsr.svg)](https://asciinema.org/a/U48TOSRslOoYBKVrqGVfaEQsr)
